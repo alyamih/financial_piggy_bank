@@ -6,7 +6,7 @@ int? initScreen;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences preferences = await SharedPreferences.getInstance();
-  preferences.clear();
+  //preferences.clear();
   initScreen = preferences.getInt('initScreen');
   await preferences.setInt('initScreen', 1);
   runApp(const MyApp());
