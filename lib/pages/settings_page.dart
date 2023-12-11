@@ -96,38 +96,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
           ),
           InkWell(
-            onTap: () {
-              // page = EPageOnSelect.ratePage;
-              // setState(() {});
-            },
-            child: Container(
-              padding: const EdgeInsets.only(top: 18, bottom: 18),
-              child: Row(
-                children: [
-                  Image.asset(
-                    'assets/icons/bag.png',
-                    color: const Color(0xFF64607D),
-                  ),
-                  const Flexible(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 15),
-                      child: Text('Subscription info',
-                          style: TextStyle(
-                              fontFamily: 'HK Grotesk',
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500)),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              // page = EPageOnSelect.ratePage;
-              // setState(() {});
-            },
+            onTap: () {},
             child: Container(
               padding: const EdgeInsets.only(top: 18, bottom: 18),
               child: Row(

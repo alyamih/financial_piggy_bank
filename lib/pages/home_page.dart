@@ -597,6 +597,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: const Color(0xFF28233E),
                         borderRadius: BorderRadius.circular(4)),
                     child: TextField(
+                      inputFormatters: <TextInputFormatter>[
+                        FilteringTextInputFormatter.digitsOnly
+                      ],
                       controller: textControllerDeposit,
                       style: const TextStyle(
                           color: Colors.white,
@@ -636,6 +639,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               color: const Color(0xFF28233E),
                               borderRadius: BorderRadius.circular(4)),
                           child: TextField(
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
                             controller: textControllerRate,
                             style: const TextStyle(
                                 color: Colors.white,
@@ -674,6 +680,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               color: const Color(0xFF28233E),
                               borderRadius: BorderRadius.circular(4)),
                           child: TextField(
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
                             controller: textControllerPeriod,
                             style: const TextStyle(
                                 color: Colors.white,

@@ -91,7 +91,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       page.value = 1;
                       setState(() {});
                     } else if (page.value == 1) {
-                      Navigator.of(context).push(
+                      Navigator.of(context).pushReplacement(
                         MaterialPageRoute<void>(
                             builder: (BuildContext context) =>
                                 const MyHomePage()),

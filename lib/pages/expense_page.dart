@@ -1,6 +1,7 @@
 import 'package:financial_piggy_bank/model/transactions_item.dart';
 import 'package:financial_piggy_bank/pages/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class AddExpensePage extends StatefulWidget {
   const AddExpensePage(
@@ -65,6 +66,9 @@ class _AddExpensePageState extends State<AddExpensePage> {
                             color: const Color(0xFF28233E),
                             borderRadius: BorderRadius.circular(4)),
                         child: TextField(
+                          inputFormatters: <TextInputFormatter>[
+                            FilteringTextInputFormatter.digitsOnly
+                          ],
                           controller: textController,
                           style: const TextStyle(
                               color: Colors.white,
