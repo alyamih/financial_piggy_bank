@@ -24,8 +24,9 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         if (page.value == 1)
           Expanded(child: Image.asset('assets/onBoarding-image2.png')),
         Padding(
-          padding: const EdgeInsets.fromLTRB(10, 89, 11, 11),
+          padding: const EdgeInsets.fromLTRB(10, 50, 11, 11),
           child: Container(
+            padding: const EdgeInsets.only(left: 20, right: 20),
             decoration: BoxDecoration(
                 color: const Color(0xFF28233E),
                 borderRadius: BorderRadius.circular(11)),
@@ -34,7 +35,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 const Padding(
                   padding: EdgeInsets.only(bottom: 12, top: 38),
                   child: Text(
-                    'Let\'s Achieve Financial Success Together',
+                    'Welcome to "Financial Piggy Bank" – Your Partner in Financial Success!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontFamily: 'HK Grotesk',
@@ -73,7 +74,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 const Padding(
                   padding: EdgeInsets.only(bottom: 33),
                   child: Text(
-                    'Become a financial expert on the go! Bid farewell to financial uncertainty!',
+                    'Easily categorize and track your planned expenses. Track your incomes',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontFamily: 'HK Grotesk',
@@ -83,7 +84,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   ),
                 ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.fromLTRB(10, 0, 20, 18),
                 child: InkWell(
                   onTap: () {
                     if (page.value == 0) {
@@ -116,15 +117,47 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       )),
                 ),
               ),
+              const Text(
+                'By clicking to the “Continue” button, you agree to our ',
+                style: TextStyle(
+                    color: Color(0xFF928EB0),
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 10),
+                textAlign: TextAlign.center,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Terms of use ',
+                      style: TextStyle(
+                          color: Color(0xFF8600f2),
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 10)),
+                  Text('and',
+                      style: TextStyle(
+                          color: Color(0xFF9696A1),
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 10)),
+                  Text(' Privacy Policy',
+                      style: TextStyle(
+                          color: Color(0xFF8600f2),
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 10))
+                ],
+              ),
               const Padding(
-                padding: EdgeInsets.only(top: 20, bottom: 20),
+                padding: EdgeInsets.only(bottom: 10),
                 child: Text(
-                  'Terms of use  |  Privacy Policy',
+                  'Restore ',
                   style: TextStyle(
-                      fontFamily: 'HK Grotesk',
-                      fontSize: 10,
-                      color: Color(0xFF8C9297),
-                      fontWeight: FontWeight.w400),
+                      color: Color(0xFF8600f2),
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w400,
+                      fontSize: 10),
                   textAlign: TextAlign.center,
                 ),
               ),
